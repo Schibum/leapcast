@@ -39,9 +39,9 @@ class DeviceHandler(tornado.web.RequestHandler):
 
     def get(self):
         if self.request.uri == "/apps":
-            for app, astatus in Environment.global_status.items():
-                if astatus["state"] == "running":
-                    self.redirect("/apps/%s" % app)
+            # for app, astatus in Environment.global_status.items():
+            #     if astatus["state"] == "running":
+            #         self.redirect("/apps/%s" % app)
             self.set_status(204)
             self.set_header(
                 "Access-Control-Allow-Method", "GET, POST, DELETE, OPTIONS")
