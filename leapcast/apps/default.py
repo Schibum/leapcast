@@ -32,6 +32,10 @@ class Fling(LEAP):
     url = "$query"
 
 
+class VGet(LEAP):
+    url = "http://vget.w69b.com/receiver/chromecast"
+
+
 class TicTacToe(LEAP):
     url = "http://www.gstatic.com/eureka/sample/tictactoe/tictactoe.html"
     supported_protocols = ['com.google.chromecast.demo.tictactoe']

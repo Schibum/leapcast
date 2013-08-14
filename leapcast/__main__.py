@@ -34,6 +34,7 @@ class HTTPThread(object):
             self.register_app(GoogleCastPlayer),
             self.register_app(TicTacToe),
             self.register_app(Fling),
+            self.register_app(VGet),
 
             (r"/connection", ServiceChannel),
             (r"/connection/([^\/]+)", ChannelFactory),
